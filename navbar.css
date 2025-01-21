@@ -7,9 +7,10 @@
 
 body {
   height: 100vh;
-  background-color: #000;
+  background-color: #f0ebeb;
   background-image: url("nature.jpg");
-  background-size: cover;
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -136,5 +137,177 @@ section#hero{
 
     .dropdown{
         display: block;
+    }
+
+    
+}
+main{
+    justify-content: center;
+}
+#quotes p{
+    justify-items: center;
+    color: black;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    font-size: x-large;
+    font-weight: 400;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    background-color:#111;
+    height: auto;
+    padding: 50px 100px;
+    margin-top:-50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+    width: 40%;
+    color: #fff;
+}
+footer .container  h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer .container h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 50px;
+    left: 0;
+    height: 2px;
+    background: rgb(15, 107, 64);
+}
+
+footer p{
+    color: #999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.sci li a:hover{
+    background-color: rgb(15, 107, 64);
+    color: #fff;
+}
+
+.sci li a .fa{
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks li{
+    list-style: none;
+}
+
+.quicklinks li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyrighttext{
+    width:100%;
+    background-color: #181818;
+    color: #999;
+    text-align: center;
+    padding: 8px 100px;
+}
+
+@media (max-width:991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container .sec.aboutus, .quicklinks, .contact{
+        width: 100%;
+    }
+
+    .copyrighttext{
+     
+        padding: 8px 100px;
     }
 }
