@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <title>About us</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">NPhotography</a></div>
+            <ul class="links">
+                <li><a href="home">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html#home">About</a></li>
+                <li><a href="service">Services</a></li>
+                <li><a href="blog">Blogs</a></li>
+                <li><a href="contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="action_btn">Login</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="service">Services</a></li>
+            <li><a href="blog">Blogs</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="#" class="action_btn">Login</a></li>
+        </div>
+    </header>
+    <section class="slider-container">
+        <div class="slider-image">
+            <div class="slider-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1613133428233-NEPK9JBTH4M4QSQ0VN9F/The+Common+Wanderer-5244.jpg"
+                    alt="1">
+                <h1>Journey</h1>
+                <div class="details">
+                    <h2>Journey</h2>
+                    <p>"The adventure begins."</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="https://images.samsung.com/is/image/samsung/assets/global/mkt/explore/global/photography/four-tips-for-shooting-vibrant-nature-photos-with-your-smartphone/mobile/EO0074_explore_Nature_Photography_image7b_655x665_mo.png?$FB_TYPE_A_MO_PNG$"
+                    alt="2">
+                <h1> Exploration</h1>
+                <div class="details">
+                    <h2> Exploration</h2>
+                    <p>"Wander often."</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="https://koala.sh/api/image/v2-fbs47-11034.jpg?width=1216&height=832&dream"
+                    alt="3">
+                <h1>Connection</h1>
+                <div class="details">
+                    <h2>Connection</h2>
+                    <p>"Nature speaks."</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="https://static.vecteezy.com/system/resources/previews/040/697/619/non_2x/ai-generated-tranquil-scene-dark-forest-mysterious-fog-spooky-night-beauty-in-nature-generated-by-ai-free-photo.jpg"
+                    alt="4">
+                <h1> Vision</h1>
+                <div class="details">
+                    <h2> Vision</h2>
+                    <p>"See with intent."</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="https://s.studiobinder.com/wp-content/uploads/2024/02/What-is-Nature-Photography-Photos-by-Chris-Burkard-StudioBinder.jpg"
+                    alt="5">
+                <h1>Purpose</h1>
+                <div class="details">
+                    <h2>Purpose</h2>
+                    <p>"Protect what matters."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h1><u>About Us</u></h1>
+        <p>At NPhotography, nature photography is more than just a passion—it’s a way of life. Our journey began
+            with a simple love for the outdoors and a desire to capture the world’s beauty in all its forms. Whether
+            it's the sweeping landscapes, intricate wildlife, or the smallest details in nature, every photograph tells
+            a story of exploration and connection. We believe in using our lens to not only showcase the wonders of
+            nature but to inspire others to appreciate and protect our planet for generations to come. Through every
+            shot, we aim to foster a deeper understanding of the world around us and encourage others to embark on their
+            own adventures in nature.</p>
+    </section>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.slider-img').on('click', function () {
+                $('.slider-img').removeClass('active');
+                $(this).addClass('active')
+            })
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Reprehenderit omnis, corporis, provident beatae excepturi veniam error
+                    aliquid molestias tenetur cumque dolore? Perferendis aperiam blanditiis rem
+                    beatae numquam qui quo perspiciatis.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                        <span>Jijamata Chowk, Maruti Mandir Rd, <br> Pune, Talegaon Dabhade, <br>Maharashtra
+                            410506</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="1234567890">+1 234 567 890</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:nature@gmail.com">nature@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright © 2025 website. All rights reserved</p>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggleBtn i')
+        const dropDown = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle('open')
+
+        }
+    </script>
+</body>
+
+</html>
