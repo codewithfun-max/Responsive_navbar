@@ -1,0 +1,148 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .landing-container {
+    text-align: center;
+    background: linear-gradient(135deg, #0d0d0e, #031941);
+    color: white;
+    min-height: 100vh;
+  }
+.features img{
+  width: 200px;
+  height: 150px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(36, 35, 35, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+
+  .hero {
+    margin-top: 80px;
+    padding: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .cta-button {
+    background: #ffcc00;
+    color: black;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    animation: bounce 2s infinite;
+  }
+
+  .cta-button:hover {
+    background: #ffd633;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .feature-card:hover {
+    transform: scale(1.05);
+  }
+
+  .footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+    }
+
+    .cta-button {
+      font-size: 18px;
+    }
+
+    .feature-card {
+      width: 90%;
+    }
+  }
